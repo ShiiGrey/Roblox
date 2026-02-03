@@ -1,0 +1,183 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local MainWindow = Rayfield:CreateWindow({
+    Name = "ShiiFen",
+    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+    LoadingTitle = "Wait a sec bish...",
+    LoadingSubtitle = "by ShiiFen",
+    Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+ 
+    DisableRayfieldPrompts = false,
+    DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
+ 
+    ConfigurationSaving = {
+       Enabled = true,
+       FolderName = nil, -- Create a custom folder for your hub/game
+       FileName = "ShiiFen's Hub"
+    },
+ 
+    KeySystem = false, -- Set this to true to use our key system
+    KeySettings = {
+       Title = "ShiiFen",
+       Subtitle = "Key System",
+       Note = "Name nya hihi UwU", -- Use this to tell the user how to get a key
+       FileName = "ShiiFen Hub", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+       SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+       Key = {"Nicsie"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+    }
+ })
+
+ local MainTab = MainWindow:CreateTab("Rizzing", 4483362458) -- Title, Image
+
+ local Button = MainTab:CreateButton({
+    Name = "ShiiFen's Side Emote + Infinite Yield",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ShiiFen/ShiiFenSideEmote/refs/heads/main/ShiiFen"))()
+    end,
+ })
+
+ local Button = MainTab:CreateButton({
+   Name = "Red side emote + Infinite Yield",
+   Interact = 'Click',
+   Callback = function()
+       loadstring(game:HttpGet('https://pastebin.com/raw/qHFSvCKe'))()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/H20CalibreYT/SystemBroken/main/script"))()
+   end,
+})
+
+ local Button = MainTab:CreateButton({
+   Name = "Normal emote (Middle)",
+   Interact = 'Click',
+   Callback = function()
+      loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Gi7331/scripts/main/Emote.lua"))()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/H20CalibreYT/SystemBroken/main/script"))()
+   end,
+})
+
+ local Button = MainTab:CreateButton({
+   Name = "Side by Side",
+   Interact = 'Click',
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe/main/obf_11l7Y131YqJjZ31QmV5L8pI23V02b3191sEg26E75472Wl78Vi8870jRv5txZyL1.lua.txt"))() 
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Long Side by Side",
+   Interact = 'Click',
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/ShiiFen/SideBySideLong/refs/heads/main/ShiiFen"))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Swim",
+   Interact = 'Click',
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/ShiiFen/Swim/refs/heads/main/ShiiFen"))()
+   end,
+})
+
+local Toggle = MainTab:CreateToggle({
+   Name = "Get banged (J)",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/ShiiFen/ShiiFenGetBangedScriptFinal/refs/heads/main/ShiiFen"))() 
+   end,
+})
+
+local Toggle = MainTab:CreateToggle({
+   Name = "Jerk off (button)",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function()
+      loadstring(game:HttpGet("https://pastefy.app/YZoglOyJ/raw"))()
+   end,
+})
+
+local Toggle = MainTab:CreateToggle({
+   Name = "Rewind (C)",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/ShiiFen/Rewind/refs/heads/main/ShiiFen"))()
+   end,
+})
+
+local Toggle = MainTab:CreateToggle({
+   Name = "Face f*ck (Z)",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/ShiiFen/FaceF-ck/refs/heads/main/ShiiFen'))()
+   end,
+})
+
+local Toggle = MainTab:CreateToggle({
+   Name = "Anti void",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function()
+
+      b = Instance.new("Part", Workspace)
+            b.Size = Vector3.new(10000, 0, 10000)
+            b.BrickColor = BrickColor.new("Dark Green")
+            b.Anchored = true
+            b.Transparency = 1
+   end,
+})
+
+local Toggle = MainTab:CreateToggle({
+   Name = "Outfit Changer",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/ShiiFen/outfit-changer/refs/heads/main/ShiiFen'))()
+   end,
+})
+
+local OtherTab = MainWindow:CreateTab("Others", 4483362458) -- Title, Image
+
+local Slider = OtherTab:CreateSlider({
+   Name = "Walkspeed",
+   Range = {16, 200},
+   Increment = 1,
+   Suffix = "Speed",
+   CurrentValue = 16,
+   Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(value)
+      game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
+   end,
+})
+
+local Toggle = OtherTab:CreateToggle({
+   Name = "Chat Spy (F1)",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/ShiiFen/ChatSpy/refs/heads/main/ShiiFen"))()
+   end,
+})
+
+local Toggle = OtherTab:CreateToggle({
+   Name = "Anti Chat Spy (F2)",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/ShiiFen/AntiChatSpy/refs/heads/main/ShiiFen"))()
+   end,
+})
+
+local Toggle = OtherTab:CreateToggle({
+   Name = "Anti Fling",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/ShiiFen/AntiFling/refs/heads/main/ShiiFen"))()
+   end,
+})
